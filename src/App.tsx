@@ -14,6 +14,7 @@ import { Footer } from "./components/Footer";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 import { CLINIC_CONFIG, getWhatsAppUrl } from "./data/clinicData";
 import { initAnalytics, trackWhatsAppConversion } from "./utils/analytics";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 export default function App() {
   useEffect(() => {
@@ -49,6 +50,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-black font-brand-sans selection:bg-[#AF9F91]/20 selection:text-black">
+      <SpeedInsights />
       {/* Topo / Header Fixo */}
       <Header onScheduleClick={handleScheduleClick} />
 
