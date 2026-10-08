@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Canonical Host
+Host: https://raquellimaclinic.com.br
+
+# Sitemap Index
+Sitemap: https://raquellimaclinic.com.br/sitemap.xml

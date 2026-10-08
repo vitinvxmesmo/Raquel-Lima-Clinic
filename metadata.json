@@ -1,0 +1,6 @@
+{
+  "name": "Raquel Lima Clinic",
+  "description": "Conheça a Raquel Lima Clinic em Unaí, MG. Odontologia, estética e atendimento individualizado com a Dra. Raquel Lima. Agende sua avaliação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

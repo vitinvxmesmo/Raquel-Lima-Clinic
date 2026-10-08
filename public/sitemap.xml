@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://raquellimaclinic.com.br/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://raquellimaclinic.com.br/images/dra-raquel-lima-clinic-unai.jpg</image:loc>
+      <image:title>Dra. Raquel Lima — Odontologia e Estética em Unaí MG</image:title>
+      <image:caption>Dra. Raquel Lima em seu consultório de odontologia e estética em Unaí, Minas Gerais</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raquellimaclinic.com.br/images/dra-raquel-lima-odontologia-estetica.jpg</image:loc>
+      <image:title>Dra. Raquel Lima — Trajetória e Atuação Clínica</image:title>
+      <image:caption>Retrato profissional da Dra. Raquel Lima em postura acolhedora na clínica</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raquellimaclinic.com.br/images/raquel-lima-clinic-consultorio.jpg</image:loc>
+      <image:title>Raquel Lima Clinic — Espaço e Lounge em Unaí</image:title>
+      <image:caption>Lounge e recepção contemporânea da Raquel Lima Clinic em Unaí, MG</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://raquellimaclinic.com.br/images/raquel-lima-consulta-diagnostica-facial.jpg</image:loc>
+      <image:title>Consulta Diagnóstica e Planejamento Facial</image:title>
+      <image:caption>Avaliação de proporções faciais e harmonia estética na clínica</image:caption>
+    </image:image>
+  </url>
+</urlset>
