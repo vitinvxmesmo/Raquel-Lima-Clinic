@@ -27,13 +27,13 @@ export const Authority: React.FC = () => {
           {/* Pilar 1: Experiência & Trajetória */}
           <div className="py-6 md:py-0 md:px-8 first:pl-0">
             <div className="text-[#AF9F91] font-brand-display text-3xl lg:text-4xl font-light mb-2">
-              [+ XX Anos]
+              29 anos
             </div>
             <h3 className="text-xs uppercase tracking-[0.2em] font-medium text-black mb-3">
-              Dedicação à Prática Clínica
+              Experiência profissional
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
-              Uma carreira pautada pelo aprimoramento contínuo, estudo detalhado da anatomia facial e respeito absoluto à saúde de cada paciente.
+              29 anos de formação em Odontologia, com atuação em Harmonização Orofacial desde 2017.
             </p>
             <span className="text-[10px] text-neutral-400 mt-3 block italic">
               * Número exato a ser configurado com o tempo de formação oficial
@@ -43,26 +43,26 @@ export const Authority: React.FC = () => {
           {/* Pilar 2: Atuação Integrada */}
           <div className="py-6 md:py-0 md:px-8">
             <div className="text-[#AF9F91] font-brand-display text-3xl lg:text-4xl font-light mb-2">
-              Odonto & Estética
+              Atendimento individualizado
             </div>
             <h3 className="text-xs uppercase tracking-[0.2em] font-medium text-black mb-3">
-              Visão Sistêmica da Face
+              Avaliação própria para cada paciente
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
-              O domínio da cavidade oral e da dinâmica muscular possibilita intervenções mais seguras, proporcionais e com perfeita sustentação funcional.
+              Cada paciente recebe uma avaliação própria, considerando suas necessidades, características e objetivos.
             </p>
           </div>
 
           {/* Pilar 3: Cuidado Personalizado */}
           <div className="py-6 md:py-0 md:px-8 last:pr-0">
             <div className="text-[#AF9F91] font-brand-display text-3xl lg:text-4xl font-light mb-2">
-              1 a 1
+              Naturalidade
             </div>
             <h3 className="text-xs uppercase tracking-[0.2em] font-medium text-black mb-3">
-              Tempo Dedicado Sem Pressa
+              Valorização da beleza natural
             </h3>
             <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed">
-              Consultas com agenda espaçada, garantindo escuta atenta, diagnóstico individualizado e acompanhamento pós-procedimento próximo e acolhedor.
+              Planejamento voltado ao equilíbrio facial e à valorização das características individuais.
             </p>
           </div>
 

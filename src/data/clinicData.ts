@@ -12,30 +12,33 @@ export const CLINIC_CONFIG = {
   brandName: "RAQUEL LIMA",
   brandSubtitle: "CLINIC",
   fullName: "Raquel Lima Clinic",
+  legalName: "Raquel de Lima Pereira Ferreira",
   professionalName: "Dra. Raquel Lima",
   canonicalUrl: "https://raquellimaclinic.com.br",
   
   // NÚMERO OFICIAL DO WHATSAPP
   // Substitua pelo número real da clínica (com 55 + DDD + Número)
-  whatsappNumber: "5538999967338",
-  contactPhone: "(38) 99996-7338",
+  whatsappNumber: "553899967338",
+  contactPhone: "(38) 9996-7338",
   
   // Localização
   city: "Unaí",
   state: "MG",
   cityState: "Unaí — Minas Gerais",
   country: "Brasil",
-  address: "Rua Calixto Martins de Melo - Centro, Unaí - MG, 38610-039",
+  address: "Rua Calixto Martins de Melo, 142 — Unaí, MG",
   
   // Horários e Contatos
-  openingHours: "Segunda a Sexta · 08h às 18h",
+  openingHours: "Segunda a sexta: 08h às 18h · Sábado: 08h às 12h",
+  openingHoursSaturday: "Sábado: 08h às 12h",
+  openingHoursSunday: "Domingo: fechado",
   instagramHandle: "@dra.raquellimaunai",
   instagramUrl: "https://www.instagram.com/dra.raquellimaunai/",
-  googleMapsQuery: "https://www.google.com/maps/search/?api=1&query=Clinica+Dra+Raquel+Lima+Rua+Calixto+Martins+de+Melo+Una%C3%AD+MG",
+  googleMapsQuery: "https://maps.app.goo.gl/b6WBfe8PhSY4iJMk7",
   googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.2719275431623!2d-46.90226472485775!3d-16.360104484362306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9357aa2b1174fd2b%3A0xf1303cf266b7814e!2sClinica%20Dra%20Raquel%20Lima!5e0!3m2!1spt-PT!2sbr!4v1791492050271!5m2!1spt-PT!2sbr",
   
   // Registro profissional (CRO provisório / a ser preenchido)
-  croInfo: "[Responsável Técnica: Dra. Raquel Lima · CRO a informar]",
+  croInfo: "CRO-MG 22739",
   
   // Mensagens padrão de WhatsApp
   defaultMessage: "Olá! Vim pelo site da Raquel Lima Clinic e gostaria de saber mais sobre os atendimentos em Unaí.",
@@ -89,6 +92,15 @@ export interface FAQItem {
 }
 
 export const FAQ_ITEMS: FAQItem[] = [
+  { id: "localizacao", question: "Qual é o endereço da Raquel Lima Clinic?", answer: "A clínica está localizada na Rua Calixto Martins de Melo, 142 — Unaí, MG. Consulte o mapa na seção de contato para planejar sua chegada." },
+  { id: "agendamento", question: "Como agendar uma avaliação?", answer: "O agendamento é realizado por telefone ou WhatsApp. Entre em contato pelo número oficial para consultar os horários disponíveis." },
+  { id: "primeira-consulta", question: "Como funciona a avaliação?", answer: "A consulta começa com a escuta das suas necessidades, características e objetivos. A indicação de qualquer tratamento depende de avaliação e planejamento individualizados." },
+  { id: "procedimentos", question: "Quais tratamentos são realizados?", answer: "A clínica oferece Harmonização Facial Full Face, Implantes Dentários, Toxina Botulínica, Bioestimuladores de Colágeno e Lentes Dentais, sempre conforme indicação profissional." },
+  { id: "horarios", question: "Quais são os horários de atendimento?", answer: "De segunda a sexta, das 08h às 18h; aos sábados, das 08h às 12h. Aos domingos, a clínica está fechada." },
+  { id: "pacientes-regiao", question: "A clínica atende pacientes de outras cidades?", answer: "Entre em contato para verificar a disponibilidade de horários e organizar sua avaliação na clínica em Unaí, MG." }
+];
+
+const LEGACY_FAQ_ITEMS: FAQItem[] = [
   {
     id: "localizacao",
     question: "Onde fica a Raquel Lima Clinic em Unaí?",
@@ -139,6 +151,14 @@ export interface SpecialtyItem {
 }
 
 export const SPECIALTIES: SpecialtyItem[] = [
+  { id: "harmonizacao-full-face", number: "01", title: "Harmonização Facial Full Face", shortDescription: "Abordagem integrada que respeita proporções, características individuais e objetivos definidos na avaliação.", fullDescription: "Uma abordagem de harmonização que considera o rosto de maneira integrada, respeitando proporções, características individuais e objetivos definidos durante a avaliação profissional.", indications: ["Avaliação individualizada", "Planejamento facial integrado", "Respeito às características naturais"] },
+  { id: "implantes-dentarios", number: "02", title: "Implantes Dentários", shortDescription: "Planejamento individualizado para reabilitar dentes perdidos e recuperar função e estética do sorriso, conforme indicação clínica.", fullDescription: "Uma alternativa para a reabilitação de dentes perdidos, com planejamento individualizado para recuperar função mastigatória e estética do sorriso, conforme a indicação clínica.", indications: ["Avaliação clínica", "Planejamento individualizado", "Reabilitação do sorriso"] },
+  { id: "toxina-botulinica", number: "03", title: "Toxina Botulínica (Botox)", shortDescription: "Aplicação para indicações estéticas e funcionais pertinentes à atuação odontológica, após avaliação individualizada.", fullDescription: "Aplicação de toxina botulínica para indicações estéticas e funcionais pertinentes à atuação odontológica, após avaliação individualizada.", indications: ["Avaliação profissional", "Indicação estética ou funcional", "Plano individualizado"] },
+  { id: "bioestimuladores", number: "04", title: "Bioestimuladores de Colágeno", shortDescription: "Tratamentos que buscam estimular a produção de colágeno de acordo com as características da pele e a indicação profissional.", fullDescription: "Tratamentos que buscam estimular a produção de colágeno, de acordo com as características da pele e a indicação profissional.", indications: ["Avaliação da pele", "Indicação profissional", "Acompanhamento individualizado"] },
+  { id: "lentes-dentais", number: "05", title: "Lentes Dentais", shortDescription: "Tratamentos estéticos planejados conforme as características dentárias e necessidades de cada paciente.", fullDescription: "Tratamentos estéticos voltados à aparência do sorriso, planejados conforme as características dentárias e necessidades de cada paciente.", indications: ["Planejamento estético", "Avaliação das características dentárias", "Cuidado com a naturalidade"] }
+];
+
+const LEGACY_SPECIALTIES: SpecialtyItem[] = [
   {
     id: "harmonizacao-facial",
     number: "01",

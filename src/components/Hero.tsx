@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
             {/* Headline Principal H1 Único com Contexto Semântico Claro */}
             <h1 className="font-brand-display text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] text-black font-normal leading-[1.08] tracking-tight text-balance">
               <span className="sr-only">Raquel Lima Clinic — Odontologia e Estética em Unaí MG. </span>
-              Cuidado que transforma.
+              Experiência e naturalidade para cuidar da sua beleza e do seu sorriso.
               <span className="block italic font-light text-black/90 mt-1">
                 Experiência que permanece.
               </span>

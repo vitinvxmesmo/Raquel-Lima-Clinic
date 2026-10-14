@@ -65,7 +65,7 @@ export const ResultsSection: React.FC = () => {
             <span className="text-xs font-brand-sans font-medium text-[#AF9F91] block mb-2">01. Diagnóstico</span>
             <h4 className="font-brand-display text-xl text-black mb-2">Mapeamento Inicial</h4>
             <p className="text-xs text-neutral-600 font-light leading-relaxed">
-              Exames clínicos minuciosos, avaliação tridimensional da dinâmica facial e análise oclusal completa.
+              Avaliação clínica individualizada, escuta das necessidades e análise das características de cada paciente.
             </p>
           </div>
 
@@ -73,7 +73,7 @@ export const ResultsSection: React.FC = () => {
             <span className="text-xs font-brand-sans font-medium text-[#AF9F91] block mb-2">02. Planejamento</span>
             <h4 className="font-brand-display text-xl text-black mb-2">Estratégia Sob Medida</h4>
             <p className="text-xs text-neutral-600 font-light leading-relaxed">
-              Definição de protocolos combinados e cronograma de sessões respeitando os limites biológicos.
+              Planejamento personalizado, com informações claras sobre as possibilidades de cuidado e suas indicações.
             </p>
           </div>
 
@@ -81,7 +81,7 @@ export const ResultsSection: React.FC = () => {
             <span className="text-xs font-brand-sans font-medium text-[#AF9F91] block mb-2">03. Acompanhamento</span>
             <h4 className="font-brand-display text-xl text-black mb-2">Cuidado Contínuo</h4>
             <p className="text-xs text-neutral-600 font-light leading-relaxed">
-              Retornos periódicos para monitoramento da estabilidade dos resultados e manutenção da saúde tecidual.
+              Acompanhamento conforme a indicação profissional e as necessidades de cada paciente.
             </p>
           </div>
         </div>

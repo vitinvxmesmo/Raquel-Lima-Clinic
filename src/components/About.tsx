@@ -57,7 +57,7 @@ export const About: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col justify-between h-full pt-2 lg:pt-6">
             <div>
               <h2 className="font-brand-display text-3xl sm:text-4xl text-black font-normal mb-8">
-                Uma trajetória dedicada ao cuidado e à harmonia facial em Unaí.
+                Conheça a Dra. Raquel Lima
               </h2>
 
               <div className="space-y-6 text-sm sm:text-base text-neutral-700 font-light leading-relaxed">
@@ -74,7 +74,7 @@ export const About: React.FC = () => {
                 </p>
 
                 <p className="text-neutral-500 text-xs sm:text-sm pt-2">
-                  * Conteúdo biográfico detalhado com especializações, titulações e cronologia acadêmica será atualizado com as informações oficiais definitivas.
+                  Raquel de Lima Pereira Ferreira possui 29 anos de formação em Odontologia e é especialista em Ortodontia. Desde 2017, atua também em Harmonização Orofacial.
                 </p>
               </div>
 
