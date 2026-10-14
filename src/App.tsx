@@ -8,6 +8,8 @@ import { Philosophy } from "./components/Philosophy";
 import { ResultsSection } from "./components/ResultsSection";
 import { ClinicSection } from "./components/ClinicSection";
 import { FAQSection } from "./components/FAQSection";
+import { BeforeAfterSection } from "./components/BeforeAfterSection";
+import { TestimonialVideoSection } from "./components/TestimonialVideoSection";
 import { PrimaryCTA } from "./components/PrimaryCTA";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
@@ -78,6 +80,8 @@ export default function App() {
         <ClinicSection />
 
         {/* 8. Perguntas Frequentes (FAQ Estruturado para SEO e Experiência) */}
+        <BeforeAfterSection />
+        <TestimonialVideoSection />
         <FAQSection />
 
         {/* 9. Chamada Principal de Conversão */}

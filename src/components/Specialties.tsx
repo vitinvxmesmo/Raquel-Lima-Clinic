@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SPECIALTIES, SpecialtyItem, CLINIC_IMAGES, getWhatsAppUrl } from "../data/clinicData";
+import { SPECIALTIES, SpecialtyItem, getWhatsAppUrl } from "../data/clinicData";
 import { trackWhatsAppConversion } from "../utils/analytics";
 import { SpecialtyModal } from "./SpecialtyModal";
 import { ArrowUpRight, Plus } from "lucide-react";
@@ -96,10 +96,8 @@ export const Specialties: React.FC = () => {
           <div className="lg:col-span-5 sticky top-28 hidden lg:block">
             <div className="relative aspect-[4/5] bg-white border border-black/5 overflow-hidden">
               <img
-                src={CLINIC_IMAGES.consultationDetail.src}
-                alt={CLINIC_IMAGES.consultationDetail.alt}
-                width={CLINIC_IMAGES.consultationDetail.width}
-                height={CLINIC_IMAGES.consultationDetail.height}
+                src="/images/foto 4.webp"
+                alt="Detalhe de atendimento odontológico na Raquel Lima Clinic"
                 className="w-full h-full object-cover object-center filter brightness-[1.01] contrast-[1.02]"
                 loading="lazy"
                 decoding="async"
