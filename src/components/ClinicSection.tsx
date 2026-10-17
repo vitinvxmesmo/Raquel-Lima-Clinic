@@ -9,7 +9,7 @@ export const ClinicSection: React.FC = () => {
   };
 
   return (
-    <section id="clinica" className="py-24 md:py-32 bg-white">
+    <section id="familia" className="py-24 md:py-32 bg-white scroll-mt-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         
         {/* Cabeçalho da Seção com SEO Local */}

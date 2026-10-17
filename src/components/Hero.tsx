@@ -114,11 +114,6 @@ export const Hero: React.FC = () => {
                       Odontologia & Estética Avançada
                     </p>
                   </div>
-                  <div className="text-right">
-                    <span className="text-[10px] uppercase tracking-[0.2em] text-[#AF9F91] bg-black/40 px-2.5 py-1 backdrop-blur-sm">
-                      Unaí · MG
-                    </span>
-                  </div>
                 </div>
               </div>
 

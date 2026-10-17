@@ -37,16 +37,17 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
 
   const navLinks = [
     { label: "Início", href: "/inicio", target: "#inicio" },
-    { label: "Dra. Raquel", href: "/dra-raquel", target: "#sobre" },
+    { label: "Família", href: "#familia", target: "#familia" },
     { label: "Especialidades", href: "/especialidades", target: "#especialidades" },
-    { label: "Valores", href: "/valores", target: "#clinica" },
-    { label: "FAQ", href: "/faq", target: "#faq" },
+    { label: "Antes e Depois", href: "#antes-e-depois", target: "#antes-e-depois" },
+    { label: "Depoimentos", href: "#depoimentos", target: "#depoimentos" },
+    { label: "Agendamento", href: "#agendamento", target: "#agendamento" },
     { label: "Contato", href: "/contato", target: "#contato" },
   ];
 
   const handleNavClick = (href: string, target: string) => {
     setIsMobileMenuOpen(false);
-    window.history.pushState({}, "", href);
+    window.history.replaceState({}, "", href);
     const element = document.querySelector(target);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -66,11 +67,11 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
       <header
         className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-md border-b border-black/5 py-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.03)]"
-            : "bg-white/80 md:bg-transparent backdrop-blur-sm md:backdrop-blur-none py-6"
+            ? "bg-black/95 backdrop-blur-md border-b border-white/10 py-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.25)]"
+            : "bg-black py-6"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-5 md:px-8 xl:px-12 flex items-center gap-6 xl:gap-10">
           {/* Logo Oficial */}
           <a
             href="/inicio"
@@ -81,13 +82,13 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
             className="group flex flex-col items-start leading-none focus:outline-none focus-visible:ring-1 focus-visible:ring-[#AF9F91]"
             aria-label="Raquel Lima Clinic - Início"
           >
-            <img src="/images/logo_horizontal.webp" alt="Raquel Lima Clinic" className="w-[170px] md:w-[210px] h-auto" />
+            <img src="/images/logo_horizontal.webp" alt="Raquel Lima Clinic" className="w-[145px] xl:w-[175px] h-auto brightness-0 invert" />
           </a>
 
           {/* Menu Desktop */}
           <nav
             aria-label="Navegação principal"
-            className="hidden md:flex items-center gap-8 lg:gap-10"
+            className="hidden lg:flex flex-1 items-center justify-center gap-4 xl:gap-7 min-w-0"
           >
             {navLinks.map((link) => (
               <a
@@ -97,7 +98,7 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
                   e.preventDefault();
                   handleNavClick(link.href, link.target);
                 }}
-                className="text-xs uppercase tracking-[0.16em] font-medium text-black/70 hover:text-black transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#AF9F91] hover:after:w-full after:transition-all after:duration-300"
+                className="whitespace-nowrap text-[10px] xl:text-xs uppercase tracking-[0.1em] xl:tracking-[0.14em] font-medium text-white/80 hover:text-white transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1px] after:bg-[#AF9F91] hover:after:w-full after:transition-all after:duration-300"
               >
                 {link.label}
               </a>
@@ -105,11 +106,11 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
           </nav>
 
           {/* CTA Desktop */}
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center shrink-0">
             <button
               onClick={handleCta}
               type="button"
-              className="inline-flex items-center justify-center gap-2 px-6 py-2.5 text-xs uppercase tracking-[0.18em] font-medium text-white bg-black hover:bg-[#AF9F91] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black cursor-pointer"
+              className="inline-flex whitespace-nowrap items-center justify-center gap-2 px-5 xl:px-6 py-2.5 text-[10px] xl:text-xs uppercase tracking-[0.14em] xl:tracking-[0.18em] font-medium text-white bg-black hover:bg-[#AF9F91] transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-black cursor-pointer"
             >
               <span>Agendar avaliação</span>
               <ArrowUpRight className="w-3.5 h-3.5 opacity-80" />
@@ -120,7 +121,7 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-black hover:text-[#AF9F91] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#AF9F91]"
+            className="lg:hidden ml-auto p-2 text-white hover:text-[#AF9F91] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#AF9F91]"
             aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
             aria-expanded={isMobileMenuOpen}
           >
@@ -135,7 +136,7 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
 
       {/* Menu Overlay Mobile */}
       <div
-        className={`fixed inset-0 z-30 bg-white transition-opacity duration-300 md:hidden ${
+        className={`fixed inset-0 z-30 bg-white transition-opacity duration-300 lg:hidden ${
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
