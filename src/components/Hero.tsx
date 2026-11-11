@@ -1,17 +1,9 @@
 import React from "react";
 import { CLINIC_CONFIG, CLINIC_IMAGES, getWhatsAppUrl } from "../data/clinicData";
 import { trackWhatsAppConversion } from "../utils/analytics";
-import { ArrowUpRight, ArrowDown } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export const Hero: React.FC = () => {
-  const handleScrollToAbout = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const aboutSection = document.querySelector("#sobre");
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   const handleCtaClick = () => {
     trackWhatsAppConversion("hero_cta_agendar", "Avaliação Inicial Hero");
   };
@@ -57,14 +49,6 @@ export const Hero: React.FC = () => {
                 <ArrowUpRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
 
-              <a
-                href="#sobre"
-                onClick={handleScrollToAbout}
-                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs uppercase tracking-[0.18em] font-medium text-black/80 hover:text-black border border-black/15 hover:border-black transition-colors"
-              >
-                <span>Conheça a Dra. Raquel</span>
-                <ArrowDown className="w-3.5 h-3.5 opacity-60" />
-              </a>
             </div>
 
             {/* Detalhe de confiança discreto */}
