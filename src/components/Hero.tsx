@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
           <div className="lg:col-span-6 flex flex-col justify-center order-2 lg:order-1 pt-4 lg:pt-0">
             {/* Tagline / Localização Discreta (Zero Pill, pura tipografia com separador refinado) */}
             <div className="flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-[#AF9F91] font-medium mb-6">
-              <span>{CLINIC_CONFIG.cityState}</span>
+              <span>Família, valores e cuidado em Unaí - MG</span>
               <span aria-hidden="true" className="w-1.5 h-1.5 rounded-full bg-[#AF9F91]/50"></span>
               <span>Odontologia & Estética</span>
             </div>
@@ -37,22 +37,15 @@ export const Hero: React.FC = () => {
             {/* Headline Principal H1 Único com Contexto Semântico Claro */}
             <h1 className="font-brand-display text-4xl sm:text-5xl lg:text-6xl xl:text-[4.2rem] text-black font-normal leading-[1.08] tracking-tight text-balance">
               <span className="sr-only">Raquel Lima Clinic — Odontologia e Estética em Unaí MG. </span>
-              Experiência e naturalidade para cuidar da sua beleza e do seu sorriso.
-              <span className="block italic font-light text-black/90 mt-1">
-                Experiência que permanece.
-              </span>
+              Cuidar de pessoas é um valor que vem de casa.
             </h1>
 
             {/* Linha divisória minimalista */}
             <div className="w-16 h-[1px] bg-[#AF9F91] my-8 opacity-80" />
 
             {/* Subheadline Provisória Estruturada com SEO Local Natural */}
-            <p className="font-brand-sans text-base sm:text-lg text-neutral-600 font-light leading-relaxed max-w-xl">
-              Odontologia, estética facial e cuidado individualizado através da experiência e do olhar da Dra. Raquel Lima em Unaí, Minas Gerais.
-            </p>
-
             {/* Ações / CTAs */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-8">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
               <a
                 href={getWhatsAppUrl(CLINIC_CONFIG.consultationMessage)}
                 onClick={handleCtaClick}

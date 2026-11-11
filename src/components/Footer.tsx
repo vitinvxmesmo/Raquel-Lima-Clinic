@@ -49,11 +49,6 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="#antes-e-depois" className="hover:text-white transition-colors">
-                  Antes e Depois
-                </a>
-              </li>
-              <li>
                 <a href="#depoimentos" className="hover:text-white transition-colors">
                   Depoimentos
                 </a>
@@ -92,6 +87,9 @@ export const Footer: React.FC = () => {
                 <p className="text-neutral-500 text-[11px] pt-1">
                   {CLINIC_CONFIG.cityState}
                 </p>
+                <a href="/politica-de-privacidade" className="block pt-2 hover:text-white transition-colors">
+                  Política de Privacidade
+                </a>
               </div>
             </div>
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import { ArrowLeft, Play, X } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Play, X } from "lucide-react";
+import { CLINIC_CONFIG, getWhatsAppUrl } from "../data/clinicData";
+import { trackWhatsAppConversion } from "../utils/analytics";
 
 const VIDEO_SRC = "/images/testimonial/miriam_testimonial.mp4";
 const POSTER_SRC = "/images/foto 1.webp";
@@ -59,5 +61,11 @@ export const TestimonialVideoSection: React.FC = () => {
       <button type="button" className="testimonial-modal-close" onClick={closeVideo} aria-label="Fechar vídeo"><X /></button>
       {hasError ? <p className="testimonial-error">Não foi possível carregar o vídeo. Tente novamente mais tarde.</p> : <video ref={videoRef} className="testimonial-player" src={VIDEO_SRC} poster={POSTER_SRC} controls playsInline preload="none" onError={() => setHasError(true)} />}
     </div>}
+    <div className="mt-8 flex justify-center">
+      <a href={getWhatsAppUrl(CLINIC_CONFIG.consultationMessage)} onClick={() => trackWhatsAppConversion("testimonial_cta_agendamento", "CTA Agendar após Depoimento")} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 text-xs uppercase tracking-[0.18em] font-medium text-white bg-black hover:bg-[#AF9F91] transition-all duration-300 shadow-sm">
+        <span>Agendar uma avaliação</span>
+        <ArrowUpRight className="w-4 h-4" />
+      </a>
+    </div>
   </section>;
 };

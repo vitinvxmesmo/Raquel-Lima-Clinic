@@ -39,7 +39,6 @@ export const Header: React.FC<HeaderProps> = ({ onScheduleClick }) => {
     { label: "Início", href: "/inicio", target: "#inicio" },
     { label: "Família", href: "#familia", target: "#familia" },
     { label: "Especialidades", href: "/especialidades", target: "#especialidades" },
-    { label: "Antes e Depois", href: "#antes-e-depois", target: "#antes-e-depois" },
     { label: "Depoimentos", href: "#depoimentos", target: "#depoimentos" },
     { label: "Agendamento", href: "#agendamento", target: "#agendamento" },
     { label: "Contato", href: "/contato", target: "#contato" },
